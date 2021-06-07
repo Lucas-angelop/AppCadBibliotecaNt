@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Biblioteca"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:background="#24DCCA"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Aluno"
+        android:onClick="abreTelaCadastro"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+
+    <TextView
+        android:textColor="@color/white"
+        android:text="Ultimos Cadastros: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+      />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
